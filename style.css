@@ -1,6 +1,6 @@
 h1 {
     font-family: Chivo;
-    font-size: 24px;
+    font-size: 36px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
@@ -9,7 +9,7 @@ h1 {
 
 h3 {
     font-family: Chivo;
-    font-size: 14px;
+    font-size: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
@@ -18,7 +18,7 @@ h3 {
 
 p {
     font-family: Chivo;
-    font-size: 14px;
+    font-size: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -46,6 +46,12 @@ pre {
 .carousel-item {
     height: 400px;
     width: fit-content;
+    text-align: center;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
 }
 
 #blogs {
