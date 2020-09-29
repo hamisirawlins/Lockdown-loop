@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lockdown loop</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap linking-->
+    <!-- CSS, JS, Popper.js, and jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!--Font-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Chivo" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="mb-1">
+            <%= article.title %>
+        </h1>
+        <div class="text-muted mb-2">
+            <%= article.created.toLocaleDateString() %>
+        </div>
+        <a href="/" class="btn btn-secondary">All Blogs</a>
+        <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+        <div>
+            <%- article.sanitizedHtml %>
+        </div>
+    </div>
+</body>
+
+</html>
